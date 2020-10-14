@@ -1,5 +1,8 @@
-html {
-  color: black;
-  font-family: serif;
-  font-size: 12px;
+@import url('https://fonts.googleapis.com/css2family=Roboto+Mono:wght@100&display=swap');
+
+body{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  background-color: black;
+  font-weight: bold;
 }
