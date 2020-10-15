@@ -1,5 +1,7 @@
-html {
+<html>
+<style>
+<body> {
   color: white;
   background-color: black;
   font-family: Courier, monospace;
-}
+} </body>
