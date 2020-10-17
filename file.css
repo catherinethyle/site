@@ -33,7 +33,7 @@ html {
 
 /* Style page content */
 .main {
-  margin-left: 160px; /* Same as the width of the sidebar */
+  margin-center: 160px; /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
 
