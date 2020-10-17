@@ -6,10 +6,7 @@ html {
 /*wanted to move text over more so it's not covered by the side bar*/
   max-width: 120vw;
 }
-body {
-/*does this skew the main text right???*  
-  right: 600vw;
-}
+
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
@@ -29,7 +26,7 @@ body {
   padding: 15px 40px 10px 10px;
   text-decoration: none;
   color: pink;
-  display: inline-block;
+  display: block;
 }
 
 /* When you mouse over the navigation links, change their color */
