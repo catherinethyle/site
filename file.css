@@ -26,7 +26,7 @@ html {
   padding: 15px 40px 10px 10px;
   text-decoration: none;
   color: pink;
-  display: block;
+  display: inline-block;
 }
 
 /* When you mouse over the navigation links, change their color */
