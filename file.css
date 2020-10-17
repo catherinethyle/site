@@ -2,7 +2,8 @@ html {
   color: black;
   background-color: white;
   font-family: Courier, monospace;
-  right: 200;
+  right: auto;
+  max-width: 120vw;
 }
 
 /* The sidebar menu */
