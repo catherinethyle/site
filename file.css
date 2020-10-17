@@ -6,7 +6,10 @@ html {
 /*wanted to move text over more so it's not covered by the side bar*/
   max-width: 120vw;
 }
-
+body {
+/*does this skew the main text right???*/  
+  right: 600vw;
+}
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
