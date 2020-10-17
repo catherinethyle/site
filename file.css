@@ -3,6 +3,7 @@ html {
   background-color: white;
   font-family: Courier, monospace;
   right: auto;
+/*wanted to move text over more so it's not covered by the side bar*/  
   max-width: 120vw;
 }
 
@@ -21,6 +22,7 @@ html {
 
 /* The navigation menu links */
 .sidenav a {
+/*tried making it so theres a bigger space btween the top and in between my title and sub headings */
   padding: 15px 40px 10px 10px;
   text-decoration: none;
   font-size: 25px 12px;
