@@ -21,10 +21,11 @@ html {
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 15px 40px 10px 10px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 25px 12px;
   color: pink;
+  style: bold italic italic italic italic;
   display: block;
 }
 
