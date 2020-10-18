@@ -5,33 +5,57 @@ html {
   right: auto;
 /*wanted to move text over more so it's not covered by the side bar*/
   max-width: 120vw;
+  font-size: 12px;
 }
 
 /* The sidebar menu */
 .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 300px; /* Set the width of the sidebar */
+  height: 50%; /* Full-height: remove this if you want "auto" height */
+  width: 200px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
-  left: 0;
+  right: 0;
   background-color: white; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20px;
+  padding-top: 10%;
+  padding-bottom: 25%;
+  padding-right: 15%;
 }
 
-/* The navigation menu links */
 .sidenav a {
-/*tried making it so theres a bigger space btween the top and in between my title and sub headings */
-  padding: 15px 40px 10px 10px;
   text-decoration: none;
   color: pink;
   display: block;
+  padding-top: 15%;
+  font-size: 25px;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: yellow;
+  text-decoration: underline wavy yellow;
+}
+
+.sidenav a:active {
+  color: yellow;
+  text-decoration: underline wavy yellow;
+}
+
+p {
+  width: 50%;
+  padding-left: 10%;
+  padding-right: 45%;
+  height: 50%;
+  padding-top: 10%;
+  padding-bottom: 25%;
+  text-align: right;
+}
+
+h1 {
+  width: 50%;
+  padding-left: 15%;
+  padding-right: 35%;
 }
 
 /* Style page content */
@@ -48,5 +72,5 @@ html {
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 20px;}
 }
