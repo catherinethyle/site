@@ -11,7 +11,7 @@ html {
 /* The sidebar menu */
 .sidenav {
   height: 50%; /* Full-height: remove this if you want "auto" height */
-  width: 200px; /* Set the width of the sidebar */
+  width: 15%; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -20,7 +20,8 @@ html {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 10%;
   padding-bottom: 25%;
-  padding-right: 15%;
+  padding-left: 0;
+  padding-right: 20%;
 }
 
 .sidenav a {
@@ -44,8 +45,8 @@ html {
 
 p {
   width: 50%;
-  padding-left: 10%;
-  padding-right: 45%;
+  padding-left: 5%;
+  padding-right: auto;
   height: 50%;
   padding-top: 10%;
   padding-bottom: 25%;
