@@ -1,82 +1,139 @@
+* {
+  -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+        box-sizing: border-box;
+}
 html {
   color: black;
   background-color: white;
   font-family: Courier, monospace;
-  right: auto;
-/*wanted to move text over more so it's not covered by the side bar*/
-  max-width: 120vw;
   font-size: 12px;
+  padding:0px;
+  margin:0px;
 }
-
-/* The sidebar menu */
-.sidenav {
-  height: 50%;
-  width: 15%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: white;
+body {
+  display:flex;
+  flex-direction: column;
   overflow-x: hidden;
-  padding-top: 10%;
-  padding-bottom: 25%;
-  padding-left: 0;
-  padding-right: 15%;
+  margin: 0px;
+  padding: 0px;
 }
-
-.sidenav a {
+/* ----------------------------main---------------------------- */
+.main {
+  width:100%;
+  flex: 1 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1px;
+  max-width: 100%;
+  margin:0px;
+}
+.columnLeft {
+  flex:15%;
+  max-width:70%; /*this + columnRight max-width = 100%*/
+}
+.columnRight {
+  flex:15%;
+  max-width:30%; /*this + columnLeft max-width = 100%*/
+}
+.columnLeft .left {
+  width:100%;
+  padding:15% 2% 15% 15%; /*top, right, bottom, left*/
+}
+.columnRight .right {
+  width:100%;
+  padding:35% 15% 15% 2%; /*top, right, bottom, left*/
+}
+/* ----------------------------text---------------------------- */
+h1 {
+  width: 100%;
+  padding:0px;
+  margin:0px;
+  font-size:24px;
+}
+h2 {
+  width:100%;
+  padding-top:10px;
+  margin:0px;
+  font-size:20px;
+}
+p {
+  padding-top: 1%;
+  text-align: justify;
+  padding:0px;
+  margin:0px;
+  font-size:16px;
+}
+a {
   text-decoration: none;
   color: #c8a2c8;
-  display: block;
-  padding-top: 15%;
-  font-size: 25px;
 }
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.main h1:hover,
+.main h2:hover,
+.main a:hover {
   color: yellow;
   text-decoration: underline wavy yellow;
 }
-
-.sidenav a:active {
-  color: yellow;
-  text-decoration: underline wavy yellow;
-}
-
-p {
-  width: 50%;
-  padding-left: 15%;
-  padding-right: auto;
-  height: 50%;
-  padding-top: 10%;
-  padding-bottom: 25%;
-  text-align: justify;
-}
-
+/* ---------------------------other---------------------------- */
 img {
     text-align: right;
     width: 100%;
 }
-
-h1 {
-  width: 50%;
-  padding-left: 15%;
-  padding-right: 35%;
+/* -----------adjust dimensions based on screen size---------- */
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size:20px;
+  }
+  h2 {
+    font-size:16px;
+  }
 }
-
-/* Style page content */
-.main {
-  margin-center: 300px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size:16px;
+  }
+  h2 {
+    font-size:12px;
+  }
 }
-
-.container {
-  opacity: 0.25;
-  background-color: white;
+@media screen and (max-width: 630px) {
+  h1 {
+    font-size:12px;
+  }
+  h2 {
+    font-size:10px;
+  }
+  p {
+    font-size:10px;
+  }
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 20px;}
+@media screen and (max-width: 450px) {
+  .columnLeft {
+    flex:15%;
+    max-width:60%; /*this + columnRight max-width = 100%*/
+  }
+  .columnRight {
+    flex:15%;
+    max-width:40%; /*this + columnLeft max-width = 100%*/
+  }
+  .columnLeft .left {
+    width:100%;
+    padding:15% 2% 15% 5%; /*top, right, bottom, left*/
+  }
+  .columnRight .right {
+    width:100%;
+    padding:21% 5% 15% 2%; /*top, right, bottom, left*/
+  }
+  h1 {
+    font-size:12px;
+  }
+  h2 {
+    font-size:10px;
+  }
+  p {
+    font-size:10px;
+  }
 }
