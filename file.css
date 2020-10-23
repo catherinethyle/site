@@ -10,14 +10,14 @@ html {
 
 /* The sidebar menu */
 .sidenav {
-  height: 50%; /* Full-height: remove this if you want "auto" height */
-  width: 15%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  height: 50%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
   right: 0;
-  background-color: white; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
+  background-color: white;
+  overflow-x: hidden;
   padding-top: 10%;
   padding-bottom: 25%;
   padding-left: 0;
