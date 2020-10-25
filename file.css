@@ -23,7 +23,6 @@ body {
 .main {
   width:100%;
   flex: 1 0 auto;
-  padding-top: 5%
 }
 .row {
   display: flex;
@@ -42,11 +41,11 @@ body {
 }
 .columnLeft .left {
   width:100%;
-  padding:15% 2% 15% 15%; /*top, right, bottom, left*/
+  padding:5% 2% 15% 15%; /*top, right, bottom, left*/
 }
 .columnRight .right {
   width:100%;
-  padding:35% 15% 15% 2%; /*top, right, bottom, left*/
+  padding:25% 15% 15% 2%; /*top, right, bottom, left*/
 }
 /* ----------------------------text---------------------------- */
 h1 {
