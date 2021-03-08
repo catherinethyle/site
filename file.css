@@ -50,8 +50,8 @@ body {
 /* ----------------------------text---------------------------- */
 h1 {
   width: 100%;
-  padding:0px;
-  margin: 50% 50% 50% 50%;
+  margin-left: 50%;
+  margin-right: 50%;
   font-size:100px;
 }
 h2 {
